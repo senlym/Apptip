@@ -1,0 +1,35 @@
+{
+  "Userdata":[{
+   "id": "4565464kjlk",
+   "userName": "senly"
+},
+{
+  "id":"7987454loki",
+  "userName": "yulexy"
+}],
+  "Tip" : [{
+    "iduser":"4565464kjlk",
+    "idtip": "456454sasd",
+    "userName": "Senly",
+    "title": "Array Elements",
+    "codigo":"private int s(){\r\nif(1==1) 2=2}",
+    "resena": "Este es el comienzo en un array de elementos",
+    "likes": ["4565464kjlk","7987454loki"],
+    "lastaccess": "2024-02-29",
+    "created": "2024-02-29",
+    "liked": false
+  },
+    {
+      "iduser":"7987454loki",
+      "idtip": "456454loikd",
+      "userName": "Yulexy",
+      "title": "To List",
+      "codigo":"private List<int> j(){\r\nList<int> j = new List<int>();\r\nfor (int i = 0: i<5 ; i++){\r\nj.add(i)}\r\n}",
+      "resena": "Añadiendo valores a una lista de elementos.",
+      "likes": ["4565464kjlk"],
+      "lastaccess": "2024-02-29",
+      "created": "2024-02-29",
+      "liked": false
+    }
+  ]
+}

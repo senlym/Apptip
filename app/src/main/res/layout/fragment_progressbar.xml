@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/fullscreenBackgroundColor"
+    android:theme="@style/ThemeOverlay.apptip.FullscreenContainer"
+    tools:context=".progressbar">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+
+        <RelativeLayout
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/design_default_color_surface"
+            android:visibility="visible">
+
+            <com.agrawalsuneet.dotsloader.loaders.PullInLoader
+                android:layout_width="150dp"
+                android:layout_height="146dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:visibility="visible"
+                app:pullin_animDur="3000"
+                app:pullin_bigCircleRadius="50dp"
+                app:pullin_dotsColor="@color/primary"
+                app:pullin_dotsRadius="12dp"
+                app:pullin_useMultipleColors="false" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

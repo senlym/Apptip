@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_overlay"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_bg"
+        android:backgroundTint="@color/loginBkColor"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="404dp"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/carpeta"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/knife_10387747">
+
+                <TextView
+                    android:id="@+id/prefix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="5dp"
+                    android:text="T"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="6dp"
+                android:layout_toEndOf="@+id/carpeta"
+                android:inputType="textMultiLine"
+                android:maxLength="20"
+                android:text="Título del tip"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="362dp"
+                android:layout_height="130dp"
+                android:layout_below="@+id/titulo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_bg"
+                android:backgroundTint="@color/darkGrey"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_header"
+                    android:paddingStart="15dp"
+                    android:tag="1"
+                    android:text="Código"
+                    android:textAlignment="viewStart"
+                    android:textColor="#EFE9E2"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <com.amrdeveloper.codeview.CodeView
+                    android:id="@+id/detallemain"
+                    android:layout_width="match_parent"
+                    android:layout_height="185dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:allowUndo="true"
+                    android:background="@drawable/shape_bg"
+                    android:backgroundTint="@color/darkGrey"
+                    android:contextClickable="true"
+                    android:dropDownWidth="@dimen/dimen150dp"
+                    android:dropDownHorizontalOffset="0dp"
+                    android:dropDownSelector="@color/darkGrey"
+                    android:fadeScrollbars="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="top|start"
+                    android:inputType="none"
+                    android:nestedScrollingEnabled="true"
+                    android:overScrollMode="ifContentScrolls"
+                    android:padding="0dp"
+                    android:scrollbars="horizontal|vertical"
+                    android:scrollHorizontally="true"
+                    android:tag="code"
+                    android:textDirection="firstStrong"
+                    android:textIsSelectable="true"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+                <RelativeLayout
+                    android:id="@+id/source_info_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/black"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/codeView">
+
+                    <TextView
+                        android:id="@+id/language_name_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="@dimen/dimen5dp"
+                        android:layout_marginLeft="@dimen/dimen5dp"
+                        android:gravity="center"
+                        android:textColor="@color/grey"
+                        tools:text="Java" />
+
+                    <TextView
+                        android:id="@+id/source_position_txt"
+                        android:layout_width="37dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="307dp"
+                        android:layout_marginEnd="@dimen/dimen5dp"
+                        android:layout_marginRight="@dimen/dimen5dp"
+                        android:layout_toEndOf="@+id/language_name_txt"
+                        android:gravity="center"
+                        android:textColor="@color/grey"
+                        tools:text="0:0" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="362dp"
+                android:layout_height="121dp"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="11dp"
+                android:background="@drawable/shape_bg"
+                android:gravity="end"
+                android:nestedScrollingEnabled="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_header"
+                    android:freezesText="false"
+                    android:paddingStart="15dp"
+                    android:tag="2"
+                    android:text="Descripción"
+                    android:textAlignment="textStart"
+                    android:textColor="#EFE9E2"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.amrdeveloper.codeview.CodeView
+                    android:id="@+id/codeViewmain2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:allowUndo="true"
+                    android:background="@drawable/shape_bg"
+                    android:backgroundTint="@color/whiteCardColor"
+                    android:contextClickable="true"
+                    android:dropDownWidth="@dimen/dimen150dp"
+                    android:dropDownHorizontalOffset="0dp"
+                    android:dropDownSelector="@color/darkGrey"
+                    android:fadeScrollbars="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="top|start"
+                    android:nestedScrollingEnabled="true"
+                    android:overScrollMode="ifContentScrolls"
+                    android:padding="2dp"
+                    android:scrollbars="horizontal|vertical"
+                    android:scrollHorizontally="true"
+                    android:tag="resena"
+                    android:text="Last month when I was creating a programming language compilers\n and interpreters for practice and implement creative ideas,\n I got an idea to create an Android Calculator app (MathScript)\n based on a scripting language to represent\n mathematics operations and functions 🤔.
+
+\nFirst, I have worked on the language \ndesign to be easy to use with helpful\n error messages and after implementing it,\n It’s time to work on the Android app\n so I need to create a Code Editor for this language\n with some features to be easy to use.\n
+
+I have decided that the code editor\n should have some features to be cool and easy\n for everyone for examples,\n
+
+◾ Custom Syntax highlighter for my new scripting language.\n
+◾ Auto Complete for language keywords.\n
+◾ Error highlighter to highlight errors and warns.\n
+◾ Support multi-theme highlighter and can change the theme in runtime.\n
+◾ Easy to update the configuration to add any updates for my language.\n
+
+So how should I create this Code Editor?\n
+I have started searching for any library\n that can give me the ability to create this editor."
+                    android:textDirection="firstStrong"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="362dp"
+                android:layout_height="96dp"
+                android:layout_below="@+id/linearLayout3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="false"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="5dp"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/likesbutton"
+                    android:layout_width="22dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_ticket"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="74dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/black_overlay" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton9"
+                        android:layout_width="74dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_ticket"
+                        android:clickable="false"
+                        app:srcCompat="@drawable/likeunactive" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_editor_absoluteX="@dimen/material_emphasis_medium">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="394dp"
+        android:layout_height="50dp"
+        android:background="@color/secundary"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="388dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/secundary"
+            android:minHeight="?attr/actionBarSize"
+            android:textAlignment="center"
+            android:textDirection="firstStrongRtl"
+            android:theme="?attr/actionBarStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|left"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="0dp"
+                android:backgroundTint="@color/secundary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+            <EditText
+                android:id="@+id/editTextText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:elegantTextHeight="false"
+                android:ems="10"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="#5815CD"
+                app:backgroundTint="@color/white"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/baseline_exit_to_app_24"
+                app:srcCompat="@drawable/baseline_exit_to_app_24" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ba"
+        android:layout_width="392dp"
+        android:layout_height="0dp"
+        android:background="@drawable/recyclerview_bg"
+        android:orientation="vertical"
+        android:overScrollMode="ifContentScrolls"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <ScrollView
+            android:id="@+id/scrollmain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/recyclerview_bg"
+                    android:backgroundTint="#EFEDED"
+                    android:scrollbars="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="66dp"
+        android:layout_height="71dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="64dp"
+        android:clickable="true"
+        android:foreground="@drawable/newtip1"
+        android:onClick="logintemplate"
+        android:textAlignment="center"
+        app:backgroundTint="@color/white"
+        app:fabSize="normal"
+        app:hideMotionSpec="@android:anim/fade_out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="50dp"
+        app:showMotionSpec="@android:anim/slide_out_right" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

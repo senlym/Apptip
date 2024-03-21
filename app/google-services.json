@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "720184457619",
+    "firebase_url": "https://apptips-x-default-rtdb.firebaseio.com",
+    "project_id": "apptips-x",
+    "storage_bucket": "apptips-x.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720184457619:android:42aa83dba97e021fabd066",
+        "android_client_info": {
+          "package_name": "Avange.apptip"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiw7wKH-t6MOKcWaWUUv5o7-N8KuXGguk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
