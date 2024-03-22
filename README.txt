@@ -29,6 +29,7 @@ Así se realiza la calificación del contenido.
 
 La Activity para la edición del tip se utilizó el codeview que puede ser configurable y el multitextview para la descripción, tres botones flotantes
 para hacer la interfaz mas amigable al usuario. 
+Uno de los retos impuestos en el desarrollo de la aplicación fue interactuar con firebase, este es mi primer proyecto en esta plataforma. 
 
 Se diseño un esquema para conectarse a una base de datos de firebase local.
 pero con el CLI de firebase después de realizar varias pruebas no fue posible pero se deja todo el esquema para 
